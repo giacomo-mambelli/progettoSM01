@@ -1,0 +1,121 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+html{
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#FFD699;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    height:100%;
+    overflow: hidden;
+}
+
+.app{
+    text-align: center;
+    height:100%;
+    overflow: hidden;
+}
+#logo{
+    width: 200px;
+    margin:30px auto;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
+    -webkit-animation-name: scale; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes scale {
+    from {width: 200px;}
+    to {width: 80px;}
+}
+@keyframes scale {
+    from {width: 200px;}
+    to {width: 80px;}
+}
+#titolo{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size:50px;
+    font-weight:bolder;
+    color:brown;
+    border-bottom: 1px brown solid;
+}
+#menu{
+    visibility: hidden;
+}
+button{
+    background-color: transparent;
+    display: block;
+    padding:3px;
+    margin:15px auto;
+    border: 1px brown solid;
+    border-radius: 5px;
+    color:brown;
+    font-size: 24px;
+    width:180px;
+}
+#credits, #badges, #results{
+    display:none;
+    position:absolute;
+    top:2%;
+    left:2%;
+    width:94%;
+    border: 3px brown solid;
+    height: 94%;
+    background-color: #FFD699;
+}
+#logoCredits{
+    width:120px;
+    margin:40px auto;
+    display:block;
+
+}
+#Pbadges{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+#Presults{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 10px;
+}
+#Presults img{
+    width:80%;
+    margin:10px auto;
+}
+.box{
+    margin-top: 5px;
+    width:30px;
+}
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    #menu button{
+        display: inline;
+        font-size: 18px;
+    }
+    #logoCredits{
+        display:none;
+    }
+    button{
+        width: 100px;
+    }
+    #logo{
+        margin:20px auto;
+    }
+}
